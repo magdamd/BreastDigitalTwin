@@ -1,0 +1,79 @@
+{
+  "file_type": "nifti_phantom_v1",
+  "units": {
+    "gyro": "MHz/T",
+    "B0": "T",
+    "T1": "s",
+    "T2": "s",
+    "T2'": "s",
+    "ADC": "10^-3 mm^2/s",
+    "dB0": "Hz",
+    "B1+": "rel",
+    "B1-": "rel"
+  },
+  "system": {
+    "gyro": 42.5764,
+    "B0": 3
+  },
+  "tissues": {
+    "water": {
+      "density": "breast_3T_density.nii.gz[0]",
+      "T1": 1.680,
+      "T2": 0.071,
+      "T2'": 0.033,
+      "ADC": 2.06,
+      "dB0": "breast_3T_dB0.nii.gz[0]",
+      "B1+": [
+	"breast_3T_B1+.nii.gz[1]"
+      ],
+      "B1-":[
+	"breast_3T_B1-.nii.gz[0]"
+      ]
+    },
+    "fat": {
+      "density": "breast_3T_density.nii.gz[1]",
+      "T1": 0.423,
+      "T2": 0.154,
+      "T2'": 0.048,
+      "ADC": 0.25,
+      "dB0": {
+        "file": "breast_3T_dB0.nii.gz[0]",
+        "func": "x - 434.0"
+      },
+      "B1+": [
+	"breast_3T_B1+.nii.gz[1]"
+      ],
+      "B1-":[
+	"breast_3T_B1-.nii.gz[0]"
+      ]
+    },
+    "pect_muscle": {
+      "density": "breast_3T_density.nii.gz[2]",
+      "T1": 1.420,
+      "T2": 0.032,
+      "T2'": 0.096,
+      "ADC": 1.15,
+      "dB0": "breast_3T_dB0.nii.gz[0]",
+      "B1+": [
+	"breast_3T_B1+.nii.gz[1]"
+      ],
+      "B1-":[
+	"breast_3T_B1-.nii.gz[0]"
+      ]
+    },
+    "heart": {
+      "density": "breast_3T_density.nii.gz[3]",
+      "T1": 1.252,
+      "T2": 0.041,
+      "T2'": 0.058,
+      "ADC": 1.57,
+      "dB0": "breast_3T_dB0.nii.gz[0]",
+      "B1+": [
+	"breast_3T_B1+.nii.gz[1]"
+      ],
+      "B1-":[
+	"breast_3T_B1-.nii.gz[0]"
+      ]
+    }
+  }
+}
