@@ -3,8 +3,8 @@
 This repository contains the phantom and sequences necessary to recreate experiences from the article "Breast Digital Twin: Towards simulation-guided acceleration of method development". 
 
 Phantom and sequences can be tested using the Any-Field scanner [1]. Some pre-defined expriences, that are also mentioned in the article, can be found under these links:
-- blabla
-- blabla
+- placeholder
+- placeholder
 
 **Phantoms**
 
@@ -18,7 +18,7 @@ The 7T phantom can include inhomogeneous B1+ and B1-.
  The sequences are written in the Pulseq .seq format [3]. The supplied sequences are FLASH and TSE sequences with various contrasts:
  - FLASH in-phase and opposed-phase
  - TSE in-phase and opposed-phase
- - TSE with fat saturation: STIR, FatSat, STIR with AsymEx, FatSat and AsymEx
+ - TSE with fat saturation: STIR, STIR with AsymEx
 
  **References**
  
