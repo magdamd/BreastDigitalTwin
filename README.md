@@ -33,9 +33,9 @@ For the anyfield scanner, the phantom can be selected from the Phantom menu as s
 
 **Some notes on the use of the Any-Field scanner**
 
-* The sequences with off-resonant RF pulses (sequences with FatSat) will not create the expected effect, because the Any-Field scanner currently does not support the extension of MR-zero to off-resonant behavior. Having that into account, no links with that same experiences are provided. 
+* Sequences with off-resonant RF pulses (sequences with FatSat) will not create the expected effect, because the Any-Field scanner currently does not support the extension of MR-zero to off-resonant behavior. Having that into account, no links with that same experiences are provided. 
 * There is a default phantom resolution, simulation accuracy and PDG number of states being used in the Any-Field scanner that does not reflect the ones used for producing the figures in the article, so a complete correspondence is not expected. It is, however, a very convenient tool to experiment the simulation with the breast digital twin for the first time without having to build new scripts.
-* The simulation of the links provided is expected to take approximately 5 minutes due to the high resolution of the sequences (512x512).
+* Simulation of the links provided is expected to take approximately 5 minutes due to the high resolution of the sequences (512x512).
 * Links to the simulation of the radial readout and CEST experiment are not provided because it has a very long execution time.
 * Simulations with motion and dynamic B0 are also not supported currently in the Any-Field scanner.
 
