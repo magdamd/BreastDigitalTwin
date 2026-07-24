@@ -22,8 +22,8 @@ For each field strength two phantoms are defined: one with 8 slices and one with
 **Simulation with the Any-Field scanner**
 
 Phantom and sequences can be tested using the Any-Field scanner [1]. Some pre-loaded sequences can be found under these links:
-1) FLASH in-phase sequence (Figure 3A.1): [FLASH IP]()
-2) TSE STIR sequence (Figure 3C.1): [TSE STIR ideal]()
+1) FLASH in-phase sequence: [FLASH IP](https://mrx-org.github.io/anyfield/?seq_url=https://raw.githubusercontent.com/magdamd/BreastDigitalTwin/refs/heads/main/Sequences/flash_IP_512x512.seq)
+2) TSE STIR sequence: [TSE STIR ideal](https://mrx-org.github.io/anyfield/?seq_url=https://raw.githubusercontent.com/magdamd/BreastDigitalTwin/refs/heads/main/Sequences/tse_IP_STIR_512x512.seq)
 
 For the anyfield scanner, the phantom can be selected from the Phantom menu as shown below
 <p align="center">
