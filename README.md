@@ -18,7 +18,7 @@ The 7T phantom can include inhomogeneous B1+ and B1-.
  The sequences are written in the Pulseq .seq format [3]. The supplied sequences are FLASH and TSE sequences with various contrasts:
  - FLASH in-phase and opposed-phase
  - TSE in-phase and opposed-phase
- - TSE with fat saturation: STIR, STIR with AsymEx
+ - TSE with fat saturation: STIR, STIR with asymmetric excitation
 
  **References**
  
