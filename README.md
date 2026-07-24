@@ -25,7 +25,7 @@ For each field strength two phantoms are defined: one with 8 slices and one with
  - TSE with fat saturation: STIR, STIR with asymmetric excitation, FatSat, FatSat with asymmetric excitation
  - FLASH opposed-phase, radial readout
 
-**Some notes on the AnyField scanner use**
+**Some notes on the use of the AnyField scanner**
 
 * The sequences with off-resonant RF pulses (sequences with FatSat) will not create the expected effect, because the AnyField scanner currently does not support the extension of MR-zero to off-resonant behavior. Having that into account, no links with that same experiences are provided. 
 * There is a default accuracy and number of states being used in the AnyField scanner that does not reflect the ones used for producing the figures in the article, so a complete correspondence is not expected. It is, however, a very convenient tool to experiment the simulation with the breast digital twin for the first time without having to build new scripts.
