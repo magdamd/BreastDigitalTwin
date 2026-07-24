@@ -1,0 +1,29 @@
+# Pulseq sequence file
+# Created by PyPulseq
+
+[VERSION]
+major 1
+minor 4
+revision 2
+
+[DEFINITIONS]
+AdcRasterTime 1e-07 
+BlockDurationRaster 1e-05 
+FOV 0.38 0.38 0.008 
+GradientRasterTime 1e-05 
+Name tse 
+Npart 1 
+Nphase 512 
+Nread 512 
+R 1 1 
+RadiofrequencyRasterTime 1e-06 
+TotalDuration 258.825032 
+oversampling 2 
+
+# Format of blocks:
+# NUM DUR RF  GX  GY  GZ  ADC  EXT
+[BLOCKS]
+   1 500000   0   0   0   0  0  0
+   2 212   1   0   0   0  0  0
+   3 200   0   1   1   0  0  0
+   4   0   0   0   0   0  0  0
