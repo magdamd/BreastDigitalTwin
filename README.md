@@ -18,6 +18,7 @@ For each field strength two phantoms are defined: one with 8 slices and one with
  - TSE in-phase and opposed-phase
  - TSE with fat saturation: STIR, STIR with asymmetric excitation, FatSat, FatSat with asymmetric excitation
  - FLASH opposed-phase, radial readout
+
 This version of the sequences is not intended for use in a real scanner. In the future, new versions may be submitted which are compliant with realistic scanner limits.
 
 **Simulation with the Any-Field scanner**
