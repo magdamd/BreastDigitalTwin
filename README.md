@@ -25,7 +25,7 @@ Phantom and sequences can be tested using the Any-Field scanner [3]. Some pre-lo
 1) FLASH in-phase sequence: [FLASH IP](https://mrx-org.github.io/anyfield/?seq_url=https://raw.githubusercontent.com/magdamd/BreastDigitalTwin/refs/heads/main/Sequences/flash_IP_512x512.seq)
 2) TSE STIR sequence: [TSE STIR ideal](https://mrx-org.github.io/anyfield/?seq_url=https://raw.githubusercontent.com/magdamd/BreastDigitalTwin/refs/heads/main/Sequences/tse_IP_STIR_512x512.seq)
 
-For the anyfield scanner, the phantom can be selected from the Phantom menu as shown below
+For the anyfield scanner, the phantom can be selected from the Phantom menu as shown below:
 <p align="center">
 <img width="1000" height="500" alt="Bild2" src="https://github.com/user-attachments/assets/d7690f42-91d0-4218-83c6-79cb4af6f4a5" />
 </p>
