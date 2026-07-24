@@ -1,6 +1,6 @@
 # Breast Digital Twin: Towards simulation-guided acceleration of method development
 
-This repository contains the phantom and sequences necessary to recreate experiments from the article "Breast Digital Twin: Towards simulation-guided acceleration of method development". 
+This repository contains the phantoms and sequences necessary to recreate experiments from the article "Breast Digital Twin: Towards simulation-guided acceleration of method development". 
 
 Phantom and sequences can be tested using the Any-Field scanner [1]. Some pre-defined expriences, that are also mentioned in the article, can be found under these links:
 - 3T ideal phantom and FLASH in-phase sequence (Figure 3A.1): [FLASH IP](https://mrx-org.github.io/anyfield/#protocol_gz=H4sIAAAAAAAACrVWbW_bNhD-Kzf1g-3ClmInzlwBHlAULbChKIq-fYkCgZJONheKZEgqjRDkvw9HSrKTxti-TAkS8Xivzz1H6iG6i9LlPLrhsorSiMmu5iiqWBvlVKlENI9qLlCyBqM0ImmuW2HxNufSodEGHZpYd9E8KlVFOq8gSRKwpeHaZfIVGLxtuUG70J3bKwlbyKI_tufxmyyi7Qo1ygplydHCFq6ySLaN7rJoDlnUMKeFcoIXYa27EHy7Xcbr-CzWyrplFl1n8hX5unJKiXiogaTQ8NIozXUuVV6h7kMMfoIpJZxJelksFvBJOSyUugGLrtUwfacEKyCBv1rdOTSHt49e_OMrvFMVzsg2kzkfq9wJVTBhp7N4h2462aEbNidzEKwpKpbCJyVxNp0BEBAOSweyyCSvYXTELUjlvGKaSQAYt2LTylxwiXnDdrycTjTXkzlMuLSOCQGLW_BQwgFFeBHAyexE7SirUNaw_1Z2HwhaaNCxijkGBe647GsfgM__th4BM5lMMvlAWWeeYFmUUhN7amXRPGx5VtWtLA_7L5BsVCd5hTWX3HElgw2XBMQTlYNDJjuLt3GgpI1p81f36cviJy6V4TveR9w7p22aJDvu9m0Rl6pJGnO_UGaXDDgkhVBF0jAukwH3JOSSvBws9rwP8Z4Tl6I-Ze6QGG9awQYoHgJHsqhg5Q0OkDeqYiKnlHN30YfwyO-ZdKoJSq1FkxQGmXX5-bfcCl5irpkeQSCLWt3lrK492ClcreI3l5vf13M487_Ly7P4crN5s7o4W16sLzfn5158rLXqNVbrzcXZ-nKzvhiMN3NYLC-HFXm7fhK2Yc7wex92udrMIfy5fl7Mf9ZTd2gsa7ToS5nDivRI7bHH1mD5DNZ_c96g26tq5J3nwUJ3sq1rRwcewGMmHzPpR-PUUB3NHW-0Mq4fZGZB6lE2UIHEWg_ewiSAHxCswOJti7JEYBXTDiuojWpS-J_Y22cd0c9HxSpg8DnkSFMHdJMAkxUYdK2R4PY4JhjDd4vQakFmygCSY2Dw48NX0Mztk-9fPsbBcyapCHCd5nIHPRpvpVSOOawItQpreDnJaWiUPyC4wPRgd2WdoTuGxFl07e8p1Dy3mBt_aPgpmKVDp0Mm9P600hFxnyQ7VB5TZqT_mRnWUDI2rBfjE9bDhQspWGdgSutZ2Armbg9OefQOsPIA5x03rmXCy2xnHTYwxXgXQxKgtUmtFFkdOVSEM8HrW0Be-jYUrXNK0r7rdNihVoyFfPFtfFrFiC-kI0Pjrz0mh5jf9ggU44ii8a_InmD6EGELWo--p31FznTpIQ5FN8iq6dDxXgvvS9QO3vt_XElyjUd2hnGL8KWVjjf43hg1MGd46iz6wLjAilpBEY56MXkYoj1OUnjA3-xjDENNw5NFhIHXb1gHxUiYitc1GpRuYBSdUzz0obUINTLXGgzfBXUrRAe21QQUVlB04PbcHiArWi6q-Dj4LATqm9GPIvG7P0Ho9Dl1ivSn0uGqL5jFvGRCsEIgbE9M3TCTJ672Z0O5zaIDWwWz-_zPz_l6ubpfL1dhEA9zePOTmR191QlVhq-tUulu4EJf3Il0p69fB_NZ9PgPBRp10wgLAAA) 
@@ -15,12 +15,18 @@ There are breast phantoms for 3T and 7T simulation. Both field-strength phantoms
 The 3T phantom can include inhomogeneous dB0, inhomogeneous B1+, inhomogeneous B1-.
 The 7T phantom can include inhomogeneous B1+ and B1-. 
 
+For each field strength two phantoms are defined: one with 8 slices and one with just one slice, which is the one used in the article.
+
 **Sequences**
 
  The sequences are written in the Pulseq .seq format [3]. The supplied sequences are FLASH and TSE sequences with various contrasts:
- - FLASH in-phase and opposed-phase
+ - FLASH in-phase and opposed-phase, cartesian readout
  - TSE in-phase and opposed-phase
- - TSE with fat saturation: STIR, STIR with asymmetric excitation
+ - TSE with fat saturation: STIR, STIR with asymmetric excitation, FatSat, FatSat with asymmetric excitation
+ - FLASH opposed-phase, radial readout
+
+**Some notes**
+The sequences with off-resonant RF pulses (sequences with FatSat) will not create the expected effect when simulated in the AnyField scanner, because it currently does not support the extension of MR-zero to off-resonant behavior. Also, there is a default accuracy and number of states being used in the AnyField scanner that does not reflect the ones used for producing the figures created in the article, so a complete correspondence is not expected. It is, however, a very convenient tool to experiment the simulation with the breast digital twin for the first time without having to build new scripts.
 
  **References**
  
