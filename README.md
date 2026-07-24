@@ -26,6 +26,7 @@ For each field strength two phantoms are defined: one with 8 slices and one with
  - FLASH opposed-phase, radial readout
 
 **Some notes**
+
 The sequences with off-resonant RF pulses (sequences with FatSat) will not create the expected effect when simulated in the AnyField scanner, because it currently does not support the extension of MR-zero to off-resonant behavior. Also, there is a default accuracy and number of states being used in the AnyField scanner that does not reflect the ones used for producing the figures created in the article, so a complete correspondence is not expected. It is, however, a very convenient tool to experiment the simulation with the breast digital twin for the first time without having to build new scripts.
 
  **References**
