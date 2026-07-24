@@ -1,6 +1,6 @@
 # Breast Digital Twin: Towards simulation-guided acceleration of method development
 
-This repository contains the phantom and sequences necessary to recreate experiences from the article "Breast Digital Twin: Towards simulation-guided acceleration of method development". 
+This repository contains the phantom and sequences necessary to recreate experiments from the article "Breast Digital Twin: Towards simulation-guided acceleration of method development". 
 
 Phantom and sequences can be tested using the Any-Field scanner [1]. Some pre-defined expriences, that are also mentioned in the article, can be found under these links:
 - placeholder
